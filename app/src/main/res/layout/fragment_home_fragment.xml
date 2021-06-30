@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_fragment"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Contadores de la aplicación:"
+            android:textSize="14sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/border_radius"
+            android:backgroundTint="@color/btn_warning"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="25sp"
+            android:paddingVertical="15sp">
+
+            <TextView
+                android:id="@+id/count_persons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="2dp"
+                android:drawableTint="@color/btn_light"
+                android:gravity="center"
+                android:text="1000 Personas"
+                android:textColor="@color/btn_light"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/border_radius"
+            android:backgroundTint="@color/btn_info"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="25sp"
+            android:paddingVertical="15sp">
+
+            <TextView
+                android:id="@+id/counts_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="2dp"
+                android:drawableTint="@color/btn_light"
+                android:gravity="center"
+                android:text="1000 Puntos"
+                android:textColor="@color/btn_light"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/border_radius"
+            android:backgroundTint="@color/btn_danger"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="25sp"
+            android:paddingVertical="15sp">
+
+            <TextView
+                android:id="@+id/counts_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_directions_bike_24"
+                android:drawablePadding="2dp"
+                android:drawableTint="@color/btn_light"
+                android:gravity="center"
+                android:text="1000 Rutas"
+                android:textColor="@color/btn_light"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

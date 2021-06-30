@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/home_fragment"-->
+<!--            android:icon="@drawable/ic_baseline_home_24"-->
+<!--            android:title="Portal"/>-->
+<!--        <item-->
+<!--            android:id="@+id/profile_fragment"-->
+<!--            android:icon="@drawable/ic_baseline_person_24"-->
+<!--            android:title="Perfil de usuario"/>-->
+<!--        <item-->
+<!--            android:id="@+id/navigation_user"-->
+<!--            android:title="Opciones Generales">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/view_routes"-->
+<!--                    android:icon="@drawable/icon_route"-->
+<!--                    android:title="Visualizar Rutas"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/view_points"-->
+<!--                    android:icon="@drawable/icon_location"-->
+<!--                    android:title="Ver Puntos"/>-->
+<!--            </menu>-->
+<!--        </item>-->
+<!--        <item-->
+<!--            android:id="@+id/navigation_admin"-->
+<!--            android:title="Gestión">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/crud_routes"-->
+<!--                    android:icon="@drawable/icon_route"-->
+<!--                    android:title="Gestionar Rutas"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/crud_points"-->
+<!--                    android:icon="@drawable/icon_location"-->
+<!--                    android:title="Gestionar Puntos"/>-->
+<!--            </menu>-->
+<!--        </item>-->
+<!--        <item-->
+<!--            android:id="@+id/navigation_root"-->
+<!--            android:title="Administración">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/gestion_users"-->
+<!--                    android:icon="@drawable/icon_route"-->
+<!--                    android:title="Gestionar Usuarios"/>-->
+<!--            </menu>-->
+<!--        </item>-->
+<!--        <item-->
+<!--            android:id="@+id/navigation_others"-->
+<!--            android:title="Otros">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/settings"-->
+<!--                    android:icon="@drawable/ic_baseline_settings_24"-->
+<!--                    android:title="Configuración"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/aboutUs"-->
+<!--                    android:icon="@drawable/ic_baseline_info_24"-->
+<!--                    android:title="Acerca de"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/closeSession"-->
+<!--                    android:icon="@drawable/icon_exit"-->
+<!--                    android:title="Cerrar Sesión"-->
+<!--                />-->
+<!--            </menu>-->
+<!--        </item>-->
+<!--    </group>-->
+
+</menu>

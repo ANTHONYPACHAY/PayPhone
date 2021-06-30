@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">navigationview</string>
+    <string name="login_tittle">Inicio de Sesión</string>
+    <string name="login_user">Correo:</string>
+    <string name="login_password">Contraseña:</string>
+    <string name="login_labellogin">Acceder</string>
+    <string name="loading_tittle">Loading...</string>
+    <string name="loading_description">Wait while your data is verified</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="home_tittle">Página de inicio</string>
+    <string name="profile_tittle">Perfil del usuario</string>
+    <string name="profile_names">Nombres:</string>
+    <string name="profile_lastname">Apellidos:</string>
+    <string name="profile_email">Correo:</string>
+    <string name="profile_generic">Lorem Ipsum</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
