@@ -18,6 +18,7 @@ import com.bestsoft32.tt_fancy_gif_dialog_lib.TTFancyGifDialogListener;*/
 import com.bumptech.glide.Glide;
 
 import anthony.uteq.navigationview.R;
+//import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class Alerts {
     private static Dialog mLoadingDialog;
@@ -86,5 +87,33 @@ public class Alerts {
                     }
                 })
                 .build();
+    }*/
+
+    /*public static SweetAlertDialog swal_loading(Context ctx){
+        SweetAlertDialog pDialog = new SweetAlertDialog(ctx, SweetAlertDialog.PROGRESS_TYPE);
+        pDialog.getProgressHelper().setBarColor(Color.parseColor("#4285F4"));
+        pDialog.setTitleText("Por favor, espere.");
+        pDialog.setCancelable(false);
+        pDialog.show();
+        return pDialog;
+    }
+    public static SweetAlertDialog swal_all(Context ctx, int status, String tittle, String info) {
+        int state = 0;
+        switch (state){
+            case 1:
+                state =  SweetAlertDialog.NORMAL_TYPE;
+            case 2:
+                state =  SweetAlertDialog.SUCCESS_TYPE;
+            case 3:
+                state =  SweetAlertDialog.WARNING_TYPE;
+            case 4:
+                state =  SweetAlertDialog.ERROR_TYPE;
+        };
+        SweetAlertDialog swal =  new SweetAlertDialog(ctx, state)
+                .setTitleText(tittle)
+                .setContentText(info)
+                .setConfirmText("Aceptar");
+        swal.show();
+        return swal;
     }*/
 }

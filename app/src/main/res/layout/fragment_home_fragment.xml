@@ -6,96 +6,141 @@
     tools:context=".home_fragment"
 
     >
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="15dp"
         android:layout_gravity="center"
         >
-
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
             android:layout_gravity="center"
-            android:text="Contadores de la aplicación:"
-            android:textSize="14sp"
-
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="5dp"
-            android:background="@drawable/border_radius"
-            android:backgroundTint="@color/btn_warning"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingHorizontal="25sp"
-            android:paddingVertical="15sp">
+            >
 
             <TextView
-                android:id="@+id/count_persons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Contadores de la aplicación:"
+                android:textSize="14sp"
+
+                />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_baseline_person_24"
-                android:drawablePadding="2dp"
-                android:drawableTint="@color/btn_light"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/border_radius"
+                android:backgroundTint="@color/btn_info"
                 android:gravity="center"
-                android:text="1000 Personas"
-                android:textColor="@color/btn_light"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:orientation="vertical"
+                android:paddingHorizontal="25sp"
+                android:paddingVertical="15sp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="5dp"
-            android:background="@drawable/border_radius"
-            android:backgroundTint="@color/btn_info"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingHorizontal="25sp"
-            android:paddingVertical="15sp">
+                <TextView
+                    android:id="@+id/counts_puntos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="2dp"
+                    android:drawableTint="@color/btn_light"
+                    android:gravity="center"
+                    android:text="1000 Puntos"
+                    android:textColor="@color/btn_light"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/counts_0"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_baseline_location_on_24"
-                android:drawablePadding="2dp"
-                android:drawableTint="@color/btn_light"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/border_radius"
+                android:backgroundTint="@color/btn_danger"
                 android:gravity="center"
-                android:text="1000 Puntos"
-                android:textColor="@color/btn_light"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:orientation="vertical"
+                android:paddingHorizontal="25sp"
+                android:paddingVertical="15sp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="5dp"
-            android:background="@drawable/border_radius"
-            android:backgroundTint="@color/btn_danger"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingHorizontal="25sp"
-            android:paddingVertical="15sp">
+                <TextView
+                    android:id="@+id/counts_rutas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_directions_bike_24"
+                    android:drawablePadding="2dp"
+                    android:drawableTint="@color/btn_light"
+                    android:gravity="center"
+                    android:text="1000 Rutas"
+                    android:textColor="@color/btn_light"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/counts_1"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_baseline_directions_bike_24"
-                android:drawablePadding="2dp"
-                android:drawableTint="@color/btn_light"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/border_radius"
+                android:backgroundTint="@color/btn_warning"
                 android:gravity="center"
-                android:text="1000 Rutas"
-                android:textColor="@color/btn_light"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:paddingHorizontal="25sp"
+                android:paddingVertical="15sp">
+
+                <TextView
+                    android:id="@+id/counts_persons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="2dp"
+                    android:drawableTint="@color/btn_light"
+                    android:gravity="center"
+                    android:text="1000 Personas"
+                    android:textColor="@color/btn_light"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+                tools:ignore="UselessParent">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <TableLayout
+                        android:id="@+id/table"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        >
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:padding="3dip"
+                                android:text="muetra"
+                                android:textColor="@color/btn_danger"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:padding="3dip"
+                                android:text="x"
+                                android:textSize="12sp" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+            </ScrollView>
     </LinearLayout>
-
-
 </FrameLayout>

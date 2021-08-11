@@ -172,6 +172,17 @@ public class MainMenu extends AppCompatActivity {
         tmp = navigation_others.add("Configuración");
         tmp.setIcon(R.drawable.ic_baseline_settings_24);
         menus.add(tmp);
+
+        tmp = navigation_others.add("Donación");
+        tmp.setIcon(R.drawable.ic_baseline_credit_card_24);
+        tmp.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                loadFragment(new Donation());
+                return false;
+            }
+        });
+
         tmp = navigation_others.add("Acerca de");
         tmp.setIcon(R.drawable.ic_baseline_info_24);
         menus.add(tmp);

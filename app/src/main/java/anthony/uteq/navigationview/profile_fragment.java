@@ -2,11 +2,21 @@ package anthony.uteq.navigationview;
 
 import android.os.Bundle;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+
+import org.w3c.dom.Text;
+
+import anthony.uteq.navigationview.utiles.DataStatic;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +69,47 @@ public class profile_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        //loadUserData();
+
         return inflater.inflate(R.layout.fragment_profile_fragment, container, false);
+    }
+
+    private void loadUserData(){
+        TextView profile_name = (TextView) getView().findViewById(R.id.profile_name);
+        TextView profile_lastname = (TextView) getView().findViewById(R.id.profile_lastname);
+        TextView profile_email = (TextView) getView().findViewById(R.id.profile_email);
+        TextView profile_rol = (TextView) getView().findViewById(R.id.profile_rol);
+
+        ImageView profile_image = (ImageView) getView().findViewById(R.id.profile_image);
+
+        Glide.with(getContext())
+                .load(DataStatic.getUser().getImagen_persona())
+                .error(R.drawable.user)
+                .into(profile_image);
+
+        profile_name.setText(DataStatic.getUser().getNombre_persona().trim().toUpperCase());
+        profile_lastname.setText(DataStatic.getUser().getApellido_persona().trim().toUpperCase());
+        profile_email.setText(DataStatic.getUser().getEmail_persona().trim());
+        String rol = DataStatic.getUser().getRol_persona();
+        if(rol.equals("U")){
+            profile_rol.setText("Usuario");
+            profile_rol.setBackground(ContextCompat.getDrawable(getContext(), R.color.btn_info));
+        } else if(rol.equals("A")){
+            profile_rol.setText("Moderados");
+            profile_rol.setBackground(ContextCompat.getDrawable(getContext(), R.color.btn_warning));
+        } else if(rol.equals("R")){
+            profile_rol.setText("Administrador");
+            profile_rol.setBackground(ContextCompat.getDrawable(getContext(), R.color.btn_danger));
+        } else{
+            profile_rol.setText("Unknow");
+            profile_rol.setBackground(ContextCompat.getDrawable(getContext(), R.color.btn_secondary));
+        }
+
+    }
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        loadUserData();
     }
 }

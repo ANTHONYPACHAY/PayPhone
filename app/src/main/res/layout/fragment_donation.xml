@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Donation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/back_white"
+        >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/white"
+
+            android:textColor="@color/btn_warning"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="15sp"
+            android:text="APOYO A LA COMUNIDAD"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="227dp"
+            android:layout_height="155dp"
+            android:src="@drawable/credit" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:paddingHorizontal="25dp"
+            android:justificationMode="inter_word"
+            android:text="Puedes realizar una pequeña contribución con nuestra organización mediante donaciones. Esta donación es opcional, aunque en caso de realizarla el monto mínimo es de $1.10 Americanos." />
+        <Button
+            android:id="@+id/btn_donar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="40dp"
+            android:backgroundTint="@color/btn_success"
+            android:text="Realizar Donación" />
+    </LinearLayout>
+</FrameLayout>
