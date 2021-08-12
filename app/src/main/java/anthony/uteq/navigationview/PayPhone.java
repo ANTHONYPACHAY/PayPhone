@@ -23,6 +23,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
 import java.io.UnsupportedEncodingException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
@@ -147,8 +148,9 @@ public class PayPhone extends Fragment {
             Double pago = Double.valueOf(txtcantidaddonar.getText().toString());
             //se multiplica por 100 por problemas de la api, no reconociendo los centavos
             pago = pago * 100;
+            DecimalFormat dformat = new DecimalFormat("#");
             //convertimos a string para luego pasarlo a entero
-            monto = Integer.parseInt(String.valueOf(pago));
+            monto = Integer.parseInt(dformat.format(pago));
         } catch (Exception e) {
             monto = 110;
             MyLogs.info(e.getMessage());
@@ -214,7 +216,7 @@ public class PayPhone extends Fragment {
                 HashMap<String, String> headers = new HashMap<>();
                 headers.put("dataType", "json");
                 headers.put("Content-Type", "application/json; charset=utf-8");
-                headers.put("Authorization", "Bearer < ME API KEY>");
+                headers.put("Authorization", "Bearer <API KEY>");
                 return headers;
             }
 
